@@ -93,17 +93,27 @@ img {
   border-right: 2px solid var(--accent-color);
   white-space: nowrap;
   margin: 0 auto;
-  animation: typing 3.5s steps(40, end) 1s both, blink-caret 0.75s step-end infinite 1s;
+  animation: typing 3.5s steps(40, end) 1s both,
+    blink-caret 0.75s step-end infinite 1s;
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: var(--accent-color) }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--accent-color);
+  }
 }
 
 .btn {
@@ -407,8 +417,14 @@ header {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .timeline-content {
@@ -448,7 +464,8 @@ header {
   background: var(--gradient-primary);
 }
 
-.slider-prev, .slider-next {
+.slider-prev,
+.slider-next {
   background: var(--gradient-accent);
   color: white;
   border: none;
@@ -463,7 +480,8 @@ header {
   box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
 }
 
-.slider-prev:hover, .slider-next:hover {
+.slider-prev:hover,
+.slider-next:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 15px rgba(255, 107, 107, 0.5);
 }
@@ -783,7 +801,7 @@ footer {
   .experience-slide {
     padding: 20px;
   }
-  
+
   .slider-nav {
     padding: 15px;
   }
@@ -815,8 +833,9 @@ footer {
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  
-  .typewriter, .typewriter-delay {
+
+  .typewriter,
+  .typewriter-delay {
     white-space: normal;
     border-right: none;
     animation: none;
@@ -839,8 +858,9 @@ footer {
     transition: none !important;
     animation: none !important;
   }
-  
-  .typewriter, .typewriter-delay {
+
+  .typewriter,
+  .typewriter-delay {
     white-space: normal;
     border-right: none;
     animation: none;

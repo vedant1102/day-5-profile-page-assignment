@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const sliderPrev = document.querySelector('.slider-prev')
   const sliderNext = document.querySelector('.slider-next')
   const sliderDots = document.querySelectorAll('.dot')
-  
+
   // Current slide index
   let currentSlide = 0
 
@@ -155,26 +155,26 @@ document.addEventListener('DOMContentLoaded', function () {
   // Experience Slider Functionality
   function showSlide(index) {
     // Hide all slides
-    experienceSlides.forEach(slide => {
+    experienceSlides.forEach((slide) => {
       slide.classList.remove('active')
-    });
-    
+    })
+
     // Remove active class from all dots
-    sliderDots.forEach(dot => {
+    sliderDots.forEach((dot) => {
       dot.classList.remove('active')
-    });
-    
+    })
+
     // Show the current slide and update dot
     experienceSlides[index].classList.add('active')
     sliderDots[index].classList.add('active')
-    
+
     // Update current slide index
     currentSlide = index
   }
 
   // Next slide
   if (sliderNext) {
-    sliderNext.addEventListener('click', function() {
+    sliderNext.addEventListener('click', function () {
       let nextSlide = currentSlide + 1
       if (nextSlide >= experienceSlides.length) {
         nextSlide = 0
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Previous slide
   if (sliderPrev) {
-    sliderPrev.addEventListener('click', function() {
+    sliderPrev.addEventListener('click', function () {
       let prevSlide = currentSlide - 1
       if (prevSlide < 0) {
         prevSlide = experienceSlides.length - 1
@@ -195,8 +195,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Dot navigation
-  sliderDots.forEach(dot => {
-    dot.addEventListener('click', function() {
+  sliderDots.forEach((dot) => {
+    dot.addEventListener('click', function () {
       const slideIndex = parseInt(this.getAttribute('data-index'))
       showSlide(slideIndex)
     })
