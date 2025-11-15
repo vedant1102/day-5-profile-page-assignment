@@ -1,4 +1,4 @@
-# 🌐 Personal Profile Website – Day 5 Assignment
+# 🌐 Personal Profile Website – Assignment
 
 This is my personal **Profile Page Website** built as part of a web development assignment.  
 It showcases my skills, experience, projects, and contact information in a responsive and modern design.
